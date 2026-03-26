@@ -1,0 +1,154 @@
+/* ============================================================
+   Digital Lab Record Entry Management System — Custom Styles
+   ============================================================ */
+
+/* ── General ──────────────────────────────────────────────── */
+body {
+  background-color: #f0f4f8;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* ── Navbar ────────────────────────────────────────────────── */
+.navbar {
+  background: linear-gradient(135deg, #1a56db, #0d3e9e) !important;
+}
+
+.navbar-brand {
+  font-size: 1.15rem;
+  letter-spacing: 0.3px;
+}
+
+/* ── Hero Icon ─────────────────────────────────────────────── */
+.hero-icon {
+  width: 80px;
+  height: 80px;
+  background: #e8f0fe;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ── Cards ─────────────────────────────────────────────────── */
+.card {
+  border-radius: 12px;
+}
+
+.card-header {
+  border-radius: 12px 12px 0 0 !important;
+  padding: 0.85rem 1.25rem;
+  font-size: 0.95rem;
+}
+
+/* ── Stat Cards ────────────────────────────────────────────── */
+.stat-card {
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1) !important;
+}
+
+.stat-icon {
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  margin-top: 4px;
+  letter-spacing: 0.3px;
+}
+
+/* ── Tables ────────────────────────────────────────────────── */
+.table thead th {
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #6c757d;
+  border-top: none;
+  padding: 0.75rem 1rem;
+}
+
+.table tbody td {
+  padding: 0.75rem 1rem;
+  font-size: 0.9rem;
+  vertical-align: middle;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f0f6ff;
+}
+
+/* ── Buttons ───────────────────────────────────────────────── */
+.btn {
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.btn-lg {
+  padding: 0.75rem 1.5rem;
+}
+
+/* ── Form Controls ─────────────────────────────────────────── */
+.form-control,
+.form-select {
+  border-radius: 8px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #1a56db;
+  box-shadow: 0 0 0 3px rgba(26, 86, 219, 0.15);
+}
+
+/* ── Alerts ────────────────────────────────────────────────── */
+.alert {
+  border-radius: 10px;
+  border: none;
+}
+
+/* ── Badges ────────────────────────────────────────────────── */
+.badge {
+  font-weight: 500;
+  font-size: 0.78rem;
+  border-radius: 6px;
+}
+
+/* ── Footer ────────────────────────────────────────────────── */
+.footer-bar {
+  background-color: #e9ecef;
+  border-top: 1px solid #dee2e6;
+}
+
+/* ── Live Clock ────────────────────────────────────────────── */
+#live-clock {
+  font-family: "Courier New", monospace;
+  letter-spacing: 0.5px;
+}
+
+/* ── Responsive Tweaks ─────────────────────────────────────── */
+@media (max-width: 576px) {
+  .stat-value {
+    font-size: 1.6rem;
+  }
+}
